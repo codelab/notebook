@@ -1,0 +1,23 @@
+{
+  "name": "codelab.notebook",
+  "version": "0.1.0",
+  "description": "Enables working with CodeLab notebooks",
+  "author": "Nikhil Kothari",
+  "license": "Apache 2.0",
+  "homepage": "https://github.com/codelab/notebook"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codelab/notebook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codelab/notebook/issues"
+  },
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+}
+
