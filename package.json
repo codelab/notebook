@@ -1,7 +1,7 @@
 {
   "name": "codelab.notebook",
   "version": "0.1.0",
-  "description": "Enables working with CodeLab notebooks",
+  "description": "CodeLab notebooks",
   "author": "Nikhil Kothari",
   "license": "Apache 2.0",
   "homepage": "https://github.com/codelab/notebook"
