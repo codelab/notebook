@@ -1,10 +1,9 @@
 // index.js
 //
 
-function Notebook() {
-}
+var notebook = require('./notebook');
 
 module.exports = {
-  Notebook: Notebook
+  Notebook: notebook
 };
 
