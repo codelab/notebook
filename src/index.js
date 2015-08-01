@@ -1,11 +1,13 @@
 // index.js
 //
 
-var notebook = require('./notebook');
 var formats = require('./formats');
+var loader = require('./loader');
 
 module.exports = {
-  Notebook: notebook,
-  formats: formats
+  formats: formats,
+  fromFile: loader.fromFile,
+  fromString: loader.fromString,
+  fromStream: loader.fromStream
 };
 
