@@ -1,11 +1,24 @@
 // formats.js
 //
 
-var codelab = require('./codelab/format'),
-    ipynb = require('./ipynb/format');
+var codelab = {
+  extension: '.nb',
+  name: 'CodeLab Notebook',
+  getFormatter: function() {
+    return require('./codelab/format');
+  }
+};
+
+var ipynb = {
+  extension: '.ipynb',
+  name: 'IPython/Jupyter Notebook',
+  getFormatter: function() {
+    return require('./ipynb/format');
+  }
+};
 
 module.exports = {
-  CodeLab: { extension: '.nb', formatter: codelab },
-  IPython: { extension: '.ipynb', formatter: ipynb }
+  CodeLab: codelab,
+  IPython: ipynb
 };
 
