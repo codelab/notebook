@@ -2,6 +2,7 @@
 //
 
 var codelab = {
+  id: 'codelab',
   extension: '.nb',
   name: 'CodeLab Notebook',
   getFormatter: function() {
@@ -10,6 +11,7 @@ var codelab = {
 };
 
 var ipynb = {
+  id: 'ipynb',
   extension: '.ipynb',
   name: 'IPython/Jupyter Notebook',
   getFormatter: function() {
@@ -18,7 +20,7 @@ var ipynb = {
 };
 
 module.exports = {
-  CodeLab: codelab,
-  IPython: ipynb
+  codeLab: codelab,
+  ipynb: ipynb
 };
 

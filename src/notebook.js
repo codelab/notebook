@@ -1,13 +1,24 @@
 // notebook.js
 //
 
-function Notebook() {
+function createEmptyNotebookContent() {
+  return {
+  };
 }
 
-Notebook.prototype.save = function(path, cb) {
+function Notebook(content, path, format) {
+  this._content = content || createEmptyNotebookContent();
+  this._source = {
+    path: path || '',
+    format: format || null
+  };
 }
 
-Notebook.load = function(path, cb) {
+Notebook.prototype.save = function(target, format, cb) {
+}
+
+Notebook.prototype.toString = function() {
+  return JSON.stringify(this._content, null, 2);
 }
 
 module.exports = Notebook;
