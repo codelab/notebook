@@ -2,7 +2,8 @@
 //
 
 var fs = require('fs'),
-    path = require('path');
+    path = require('path'),
+    uuid = require('node-uuid');
 var formats = require('./formats');
 
 function Notebook(content, path, format) {
@@ -25,7 +26,30 @@ Notebook.prototype.toString = function() {
  */
 Notebook.create = function() {
   var defaultContent = {
+    title: 'Notebook',
+    id: uuid.v4(),
+    metadata: {
+    },
+    cells: [
+      {
+        id: uuid.v4(),
+        type: 'markdown',
+        metadata: {
+        },
+        input: '# Header',
+      },
+      {
+        id: uuid.v4(),
+        type: 'code',
+        metadata: {
+        },
+        input: '',
+        outputs: [
+        ]
+      }
+    ]
   };
+
   return new Notebook(defaultContent,
                       /* path */ '',
                       /* format */ formats.default.id );
