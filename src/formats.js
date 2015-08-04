@@ -20,6 +20,7 @@ var ipynb = {
 };
 
 module.exports = {
+  default: codelab,
   codeLab: codelab,
   ipynb: ipynb
 };
