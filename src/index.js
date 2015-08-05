@@ -2,7 +2,6 @@
 //
 
 var formats = require('./formats'),
-    loader = require('./loader'),
     notebook = require('./notebook');
 
 /**
