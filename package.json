@@ -4,7 +4,7 @@
   "description": "CodeLab notebooks",
   "author": "Nikhil Kothari",
   "license": "Apache 2.0",
-  "homepage": "https://github.com/codelab/notebook"
+  "homepage": "https://github.com/codelab/notebook",
   "repository": {
     "type": "git",
     "url": "https://github.com/codelab/notebook.git"
@@ -19,5 +19,7 @@
   "engines": {
     "node": "0.10.x"
   },
+  "dependencies": {
+    "node-uuid": "^1.4.3"
+  }
 }
-
