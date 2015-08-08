@@ -4,7 +4,8 @@
 var fs = require('fs'),
     path = require('path'),
     uuid = require('node-uuid');
-var formats = require('./formats');
+var cell = require('./cell'),
+    formats = require('./formats');
 
 function Notebook(content, path, format) {
   this._content = content;
