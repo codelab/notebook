@@ -63,5 +63,4 @@ cells. Cells contain input text, and a number of outputs, as well as comments.
        text: "text"
     }
 
-## More
 
