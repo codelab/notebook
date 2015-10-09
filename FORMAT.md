@@ -21,7 +21,7 @@ cells. Cells contain input text, and a number of outputs, as well as comments.
 ## Cell Structure
 
     {
-      type: "code|markdown|raw",
+      type: "code|markdown",
       metadata: {
         key/value pairs
         mime,
