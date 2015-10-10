@@ -22,6 +22,7 @@ cells. Cells contain input text, and a number of outputs, as well as comments.
 
     {
       type: "code|markdown",
+      id: "unique id",
       metadata: {
         key/value pairs
         mime,
