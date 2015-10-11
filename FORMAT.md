@@ -53,15 +53,14 @@ cells. Cells contain input text, and a number of outputs, as well as comments.
 
     {
       posts: [
+        {
+          timestamp: "date",
+          author: "name",
+          text: "text"
+        }
         ...
       ],
       resolved: true|false
-    }
-
-    {
-       timestamp: "date",
-       author: "name",
-       text: "text"
     }
 
 
